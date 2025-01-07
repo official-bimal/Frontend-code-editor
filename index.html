@@ -28,17 +28,17 @@
     <!-- THIS IS SCRIPT -->
     <script type="text/javascript">
         function run() {
-            let htmlcode = document.querySelector(".learn-with_naimul #html-code").value;
-            let csscode = "<Style>"+document.querySelector(".learn-with_naimul #css-code").value+"<Style>";
-            let jscode = document.querySelector(".learn-with_naimul #js-code").value;
-            let output = document.querySelector(".learn-with_naimul #output");
+            let htmlcode = document.querySelector(".learn-bimal #html-code").value;
+            let csscode = "<Style>"+document.querySelector(".learn-bimal #css-code").value+"<Style>";
+            let jscode = document.querySelector(".learn-bimal #js-code").value;
+            let output = document.querySelector(".learn-bimal #output");
             // console.log(htmlcode,csscode,jscode,output);
             output.contentDocument.body.innerHTML = htmlcode+csscode;
             output.contentwindow.eval(jscode);
         }
-        document.querySelector(".learn-with_naimul #html-code").addEventListener("keyup",run);
-        document.querySelector(".learn-with_naimul #css-code").addEventListener("keyup",run);
-        document.querySelector(".learn-with_naimul #js-code").addEventListener("keyup",run);
+        document.querySelector(".learn-bimal #html-code").addEventListener("keyup",run);
+        document.querySelector(".learn-bimal #css-code").addEventListener("keyup",run);
+        document.querySelector(".learn-bimal #js-code").addEventListener("keyup",run);
     </script>
 </body>
 </html>
